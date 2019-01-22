@@ -1,0 +1,91 @@
+
+//common
+$black: #000;
+$overlay_black: rgba(0, 0, 0, .9);
+$overlay_black-75: rgba(0, 0, 0, .75);
+$white: #fff;
+$white-a: rgba(255,255,255,.9);
+$white-aa: rgba(255,255,255,.5);
+$gray: #9fa0a0;
+$gray-l: rgba(216,216,216,1);
+$gray-ll: rgba(240,240,240,1);
+$green: #06AC1C;
+$cp-blue: rgba(0,113,188,1);
+
+//topic
+$demoday-topic: rgba(213,0,80,1);
+$demoday-topic-a: rgba(213,0,80,.7);
+$topic-d: rgba(222,96,113,1);
+$topic-l: rgba(255,128,129,1);
+$topic-ll: rgba(255,128,129,.3);
+$topic-lll: rgba(255,128,129,.2);
+
+$briefing: #b8292d;
+
+//alert
+$alert: rgba(195,13,35,1);
+$alert-light: rgba(230,169,171,1);
+$alert-bg: rgba(230,169,171,.5);
+
+//base
+$base-gs: rgba(0,46,75,1);
+$base-gg: rgba(46,65,90,1);
+
+//main
+$main-gs: rgba(102,159,207,1);
+$main-gg: rgba(127,196,228,1);
+$main-l: rgba(102,159,207,.4);
+
+//ai
+$ai-base: rgba(18,151,175,1);
+$ai-base-g: #00bcb3;
+$ai-gs: rgba(126,198,188,1);
+$ai-gg: rgba(176,213,218,1);
+
+//Rails-full
+$rails-full-base: rgba(127,136,182,1);
+$rails-full-gs: rgba(152,178,212,1);
+$rails-full-gg: rgba(185,203,219,1);
+
+//Rails-part
+$rails-part-base: rgba(255,110,100,1);
+$rails-part-gs: rgba(245,177,162,1);
+$rails-part-gg: rgba(255,211,183,1);
+
+//article
+$article-bg: rgba(22,88,157,.05);
+
+//カテゴリ
+$technology: rgba(0,177,166,1);
+$job: rgba(44,97,173,1);
+$qualification: rgba(193,39,45,1);
+$interview: rgba(246,170,19,1);
+$community: rgba(161,138,191,1);
+$diveintocode: rgba(0,160,233,1);
+$africa: rgba(83,36,16,1);
+
+
+
+
+
+@mixin gradient-color{
+  background: linear-gradient(90deg, $base-gs, $base-gg);
+}
+@mixin bg-common{
+  background: linear-gradient(-90deg, #18589D, #131F3F);
+}
+
+@mixin bg-gradient($start,$end){
+  background: linear-gradient(90deg, $start 20%, $end);
+}
+
+// メダルの色
+.medal-bronze{
+  background: linear-gradient(-45deg, #432d13, #5b4a43 30%, #432d13);
+}
+.medal-silver{
+  background: linear-gradient(-45deg, #4d4d4d, #999999 30%, #404040);
+}
+.medal-gold{
+  background: linear-gradient(-45deg, #a38149, #fbd2a3 30%, #a2794a);
+}

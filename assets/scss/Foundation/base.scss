@@ -43,11 +43,4 @@ button{
 p,div,span{
   font-family: inherit;
 }
-h1,h2{
-  font-family: serif, 'IPA';
-  line-height: 1.5;
-  margin: 0;
-  @media screen and (max-width: 480px){
-    font-family: 'IPA';
-  }
-}
+

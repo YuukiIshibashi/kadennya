@@ -1,10 +1,18 @@
 <template>
   <div>
+    <img src="~/assets/images/kadennya_logo.png" class="logo">
     <nuxt/>
   </div>
 </template>
 
 <style>
+ .logo {
+   position: fixed;
+   top: 10px;
+   left: 10px;
+   width: 100px;
+   z-index: 10;
+ }
 /* html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;

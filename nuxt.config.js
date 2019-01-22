@@ -36,7 +36,11 @@ module.exports = {
     }
   },
   css:[
-    "~/assets/scss/Foundation/base.scss"
+    "~/assets/scss/Foundation/base.scss",
+    "~/assets/scss/Object/utility/font_size.scss",
+    "~/assets/scss/Object/utility/font.scss",
+    "~/assets/scss/Object/utility/colors.scss",
+    "~/assets/scss/Object/utility/common.scss"
   ],
 }
 

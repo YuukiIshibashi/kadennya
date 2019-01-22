@@ -1,0 +1,54 @@
+@font-face{
+  font-family: 'genshin';
+  src: url('../../../fonts/NotoSansJP-Light-ss.woff') format('woff');
+  font-weight: normal;
+}
+@font-face{
+  font-family: 'genshin';
+  src: url('../../../fonts/NotoSansJP-Regular-ss.woff') format('woff');
+  font-weight: bold;
+}
+@font-face{
+  font-family: 'genshin';
+  src: url('../../../fonts/NotoSansJP-Bold-ss.woff') format('woff');
+  font-weight: 900;
+}
+@font-face{
+  font-family: 'mugen-p';
+  src: url('../../../fonts/mgenplus-1cp-medium-ss.woff') format('woff');
+  font-weight: bold;
+}
+@font-face{
+  font-family: 'mugen-p';
+  src: url('../../../fonts/mgenplus-1cp-regular-ss.woff') format('woff');
+  font-weight: normal;
+}
+@font-face{
+  font-family: 'IPA';
+  src: url('../../../fonts/NotoSerifCJKjp-SemiBold-ss.woff') format('woff');
+}
+@font-face{
+  font-family: 'AvantGarde';
+  src: url('../../../fonts/ITC_Avant_Garde_Gothic_LT_Book_Regular.woff') format('woff');
+}
+@font-face{
+  font-family: 'eriji';
+  src: url('../../../fonts/eriji.woff') format('woff');
+}
+@font-face{
+  font-family: 'komorebi';
+  src: url('../../../fonts/komorebi.woff') format('woff');
+}
+
+.string-mincho{
+  font-family: serif, 'IPA';
+}
+
+.string-AvantGarde{
+  font-family: 'AvantGarde';
+}
+
+.string-mugen{
+  font-family: 'mugen-p';
+}
+

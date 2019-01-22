@@ -1,0 +1,21 @@
+@import 'colors.scss';
+
+.form {
+  &-ok {
+    color: $green;
+  }
+  &-ok-block {
+    display: inline
+  }
+  &-validation {
+    display: inline;
+    font-size: 10px;
+    color: $alert;
+  }
+  &-server-validation {
+    display: inline;
+    label {
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import 'colors.scss';
+@import 'mixins.scss';
+@import 'keyframes.scss';
+
+.flex{
+  display: flex;
+  align-items: stretch;
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+.flex-row{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.flex-align-center{
+  display: flex;
+  align-items: center;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
