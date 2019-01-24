@@ -1,38 +1,48 @@
 <template>
-  <section class="container">
-    <li v-for="u in user" :key="u.id">
-        <h1>{{u.name}}</h1>
-        <h1>{{u.title}}</h1>
-    </li>
+  <section class="l_inner-full">
+    <navi />
+    <ul class="blog">
+      <li v-for="blog in blogs" :key="blog.id" class="blog_item">
+        <nuxt-link :to="`/blogs/${blog.id}`">
+          <h1 class="string-m">{{blog.title}}</h1>
+          <p>{{blog.created_at}}</p>
+        </nuxt-link>
+      </li>
+    </ul>
   </section>
 </template>
  
 <script>
 import axios from 'axios'
+import Navi from '../../components/Header';
  
 export default {
   async asyncData ({ params }) {
-    const { data: user } = await axios.get('https://api.github.com/repos/YuukiIshibashi/concertmaker/issues?state=open')
+    const { data: blogs } = await axios.get('https://api.github.com/repos/YuukiIshibashi/blog/issues?state=open')
     return {
-      user
+      blogs
     }
-  }
+  },
+  components: {
+    Navi,
+  },
 }
 </script>
  
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
+<style lang="scss">
+@import "~/assets/scss/Object/utility/colors.scss";
+.blog {
+  margin-top: 100px;
+  background-color: $white;
+  padding: 20px;
+  @at-root {
+    &_item {
+      padding-bottom: 20px;
+      border-bottom: dotted 1px $gray;
+    }
+  }
+  
+
 }
- 
-.container img{
-  margin-bottom: 20px;
-  border-radius: 50%;
-  overflow: hidden;
-}
+
 </style>

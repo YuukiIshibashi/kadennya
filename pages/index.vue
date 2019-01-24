@@ -1,12 +1,16 @@
 <template>
-  <div class="container">
+  <div>
     <section class="top">
       <img src="~/assets/images/kadennya_title.png" class="top_title">
       <img src="~/assets/images/kadennya_koara.png" class="top_koara">
       <p class="string-r color-white">デザインをしたり楽器を吹いたりコンサートを開いたりしています</p>
-      <ul>
-        <li class="tags tags-1"><span>日記のような</span></li>
-        <li class="tags tags-2"><span>ギャラリー</span></li>
+      <ul class="pc_only">
+        <nuxt-link to="/blogs">
+          <li class="tags tags-1"><span>日記のような</span></li>
+        </nuxt-link>
+        <nuxt-link to="/gallery">
+          <li class="tags tags-2"><span>ギャラリー</span></li>
+        </nuxt-link>
         <li class="tags tags-3"><span>バスクラのこと</span></li>
         <li class="tags tags-4"><span></span></li>
         <li class="tags tags-5"><span></span></li>
@@ -16,7 +20,7 @@
       <p class="string-r color-white">
         かでんやはデザインとバスクラリネットが好きな会社員です。コンサートのチラシを作るのが好きでたくさん作っていたら、
         お願いされることが多くなりました。<br>
-        お子さまやお年寄りの方にコンサートを開催するのも好きです。よかったら声かけてください〜<br>
+        お子さまやお年寄りの方にコンサートを開催するのも好きです。<br>
         仕事はデザイナー兼フロントエンドエンジニアです。バックエンドもたまにやります。
         好きな言語はJavaScriptです。
       </p>
@@ -25,20 +29,13 @@
 </template>
 
 <script>
-// import AppLogo from '~/components/AppLogo.vue'
 
 export default {
-  // components: {
-  //   AppLogo
-  // }
 }
 </script>
 
 <style lang="scss">
-.container {
-  height: 100vh;
-  background: url('../assets/images/bg/bg-wood.jpg') repeat 100px;
-}
+
 .top {
   width: 75%;
   background-size: cover;
@@ -55,13 +52,24 @@ export default {
   overflow: visible;
   box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
   font-family: 'komorebi';
+  @media screen and (max-width: 480px){
+    width: 100%;
+    padding: 50px 10px 20px;
+    height: 250px;
+  }
   @at-root {
 
     &_title {
       width: 60%;
+      @media screen and (max-width: 480px){
+        width: 70%;
+      }
     }
     &_koara {
       width: 15%;
+      @media screen and (max-width: 480px){
+        width: 30%;
+      }
     }
     &_description {
       width: 80%;
@@ -74,6 +82,11 @@ export default {
       padding: 110px 30px 30px;
       box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
       font-family: 'komorebi';
+      @media screen and (max-width: 480px){
+        width: 90%;
+        margin: 0;
+        padding: 90px 10px 10px;
+      }
     }
   }
 }

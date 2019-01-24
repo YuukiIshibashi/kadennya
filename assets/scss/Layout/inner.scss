@@ -1,0 +1,10 @@
+.l_inner-full {
+    width: 1150px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    @media screen and (max-width: 1150px){
+      width: 100%;
+      padding: 5%;
+    }
+  }
