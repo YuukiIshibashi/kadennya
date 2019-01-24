@@ -3,7 +3,7 @@
     <div class="modal_overlay" @click="closeModal">
       <div :class="setWidth">
         <img :src="content.src" >
-        <p class="color-white string-r">{{content.description}}</p>
+        <p class="color-white string-r center">{{content.description}}</p>
       </div>
     </div>
   </transition>

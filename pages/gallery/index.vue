@@ -1,24 +1,48 @@
 <template>
   <div>
     <navi />
+    <section class="gallery_side">
+    </section>
     <section class="gallery_top">
-      <!-- <div>
+      <div>
         <h1 class="string-m color-white">今までつくったもの</h1>
         <p class="string-ss color-white">大昔のイケてないのも載せてます</p>
-      </div> -->
+      </div>
     </section>
     <div class="l_inner-full">
-      <div class="mt-60">
+      <div class="ml-10">
         <h3 class="gallery_tags gallery_tags-1"><span>コンサート関係</span></h3>
         <ul class="gallery">
-        <li v-for="image in galleryaImages" 
-            :key="image.title"
-            class="gallery_item"
-            :class="imageSize(image.size)"
-            @click="open(image)">
-            <img :src="image.src">
-            <p class="gallery_item_caption string-ss">{{image.title}}</p>
-        </li>
+          <li v-for="image in concertImages" 
+              :key="image.title"
+              class="gallery_item"
+              :class="imageSize(image.size)"
+              @click="open(image)">
+              <img :src="image.src">
+              <p class="gallery_item_caption string-ss">{{image.title}}</p>
+          </li>
+        </ul>
+        <h3 class="gallery_tags gallery_tags-1"><span>森林浴音楽会</span></h3>
+        <ul class="gallery">
+          <li v-for="image in shinrinyokuImages" 
+              :key="image.title"
+              class="gallery_item"
+              :class="imageSize(image.size)"
+              @click="open(image)">
+              <img :src="image.src">
+              <p class="gallery_item_caption string-ss">{{image.title}}</p>
+          </li>
+        </ul>
+        <h3 class="gallery_tags gallery_tags-1"><span>イラスト</span></h3>
+        <ul class="gallery">
+          <li v-for="image in illustImages" 
+              :key="image.title"
+              class="gallery_item"
+              :class="imageSize(image.size)"
+              @click="open(image)">
+              <img :src="image.src">
+              <p class="gallery_item_caption string-ss">{{image.title}}</p>
+          </li>
         </ul>
       </div>
     </div>
@@ -69,6 +93,18 @@ export default {
   widows: 100%;
   @at-root {
     &_top {
+      height: 200px;
+      padding-left: 50px;
+      display: flex;
+      align-items: center;
+      background: url('../../assets/images/bg/bg-mint.jpg') repeat;
+      background-size:  500px 500px;
+      box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
+      * {
+        font-family: 'komorebi';
+      }
+    }
+    &_side {
       width: 30px;
       height: 100vh;
       position: fixed;
@@ -76,11 +112,6 @@ export default {
       background: url('../../assets/images/bg/bg-gray.jpg') repeat;
       box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
       background-size:  500px 500px;
-      display: flex;
-      align-items: center;
-      * {
-        font-family: 'komorebi';
-      }
     }
     &_item {
       position: relative;
@@ -113,12 +144,12 @@ export default {
     display: flex;
     padding-left: 20px;
     align-items: center;
-    width: 20vw;
-    height: 5vw;
+    width: 25vw;
+    height: 7vw;
     font-family: 'eriji';
     letter-spacing: -5px;
-    font-size: 2vw;
-    transform: rotate(-5deg) translate(-20px, -10px);
+    font-size: 3vw;
+    transform: rotate(-5deg) translate(-30px, -10px);
     
     @at-root {
     &-1 {

@@ -1,6 +1,6 @@
 <template>
   <ul class="navi">
-    <nuxt-link to="/blog">
+    <nuxt-link to="/blogs">
       <li class="navi_list string-s"><span>日記</span></li>
     </nuxt-link>
     <nuxt-link to="/gallery">
