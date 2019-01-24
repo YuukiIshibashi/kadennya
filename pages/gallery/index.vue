@@ -2,12 +2,13 @@
   <div>
     <navi />
     <section class="gallery_top">
-      <div>
+      <!-- <div>
         <h1 class="string-m color-white">今までつくったもの</h1>
         <p class="string-ss color-white">大昔のイケてないのも載せてます</p>
-      </div>
+      </div> -->
     </section>
     <div class="l_inner-full">
+      <div class="mt-60">
         <h3 class="gallery_tags gallery_tags-1"><span>コンサート関係</span></h3>
         <ul class="gallery">
         <li v-for="image in galleryaImages" 
@@ -19,9 +20,10 @@
             <p class="gallery_item_caption string-ss">{{image.title}}</p>
         </li>
         </ul>
-        <gallery-item v-if="isOpen" :content="openImage" @close="close"></gallery-item>
+      </div>
     </div>
- </div>
+    <gallery-item v-if="isOpen" :content="openImage" @close="close"></gallery-item>
+  </div>
 </template>
  
 <script> 
@@ -67,12 +69,13 @@ export default {
   widows: 100%;
   @at-root {
     &_top {
-      width: 60%;
-      height: 120px;
+      width: 30px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
       background: url('../../assets/images/bg/bg-gray.jpg') repeat;
       box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
       background-size:  500px 500px;
-      padding-left: 130px;
       display: flex;
       align-items: center;
       * {
@@ -115,7 +118,8 @@ export default {
     font-family: 'eriji';
     letter-spacing: -5px;
     font-size: 2vw;
-    transform: rotate(-5deg);
+    transform: rotate(-5deg) translate(-20px, -10px);
+    
     @at-root {
     &-1 {
         background: url('../../assets/images/hover_tag3.png') no-repeat;
