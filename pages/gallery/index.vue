@@ -112,13 +112,22 @@ export default {
       background: url('../../assets/images/bg/bg-gray.jpg') repeat;
       box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
       background-size:  500px 500px;
+      @media screen and (max-width: 480px){
+        display: none;
+      }
     }
     &_item {
       position: relative;
       width: 64%;
       margin-bottom: 70px;
+      @media screen and (max-width: 480px){
+        width: 100%;
+      }
       &.half {
-          width: 32%;  
+        width: 32%;
+        @media screen and (max-width: 480px){
+          width: 100%;
+        }
       }
       img {
         transition-property: all;
@@ -150,7 +159,11 @@ export default {
     letter-spacing: -5px;
     font-size: 3vw;
     transform: rotate(-5deg) translate(-30px, -10px);
-    
+    @media screen and (max-width: 480px){
+      width: 100%;
+      height: 20vw;
+      font-size: 5vw;
+    }
     @at-root {
     &-1 {
         background: url('../../assets/images/hover_tag3.png') no-repeat;

@@ -5,6 +5,7 @@
       <img src="~/assets/images/kadennya_koara.png" class="top_koara">
       <p class="string-r color-white">デザインをしたり楽器を吹いたりコンサートを開いたりしています</p>
       <ul class="pc_only">
+        <li class="tags tags-6"><span></span></li>
         <nuxt-link to="/blogs">
           <li class="tags tags-1"><span>日記のような</span></li>
         </nuxt-link>
@@ -14,6 +15,7 @@
         <li class="tags tags-3"><span>バスクラのこと</span></li>
         <li class="tags tags-4"><span></span></li>
         <li class="tags tags-5"><span></span></li>
+        
       </ul>
     </section>
     <section class="top_description">
@@ -161,7 +163,18 @@ export default {
         transform: rotate(15deg);
       }
     }
-
+    &-6 {
+      top: 30%;
+      right: -28%;
+      background: url('../assets/images/hover_tag6.png') no-repeat;
+      background-size: 100%;
+      transform: rotate(-15deg);
+      &:hover {
+        background: url('../assets/images/normal_tag6.png') no-repeat;
+        background-size: 100%;
+        transform: rotate(-15deg);
+      }
+    }
   }
   
 

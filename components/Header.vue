@@ -31,12 +31,14 @@ export default {
   background-size: 100%;
   padding: 1% 5% 1% 2%;
   z-index: 20;
+  @media screen and (max-width: 480px){
+    display: none;
+  }
   @at-root {
     &_list {
       font-family: 'komorebi';
       padding-left: 5px;
       letter-spacing: -1px;
-
     }
   }
 }
