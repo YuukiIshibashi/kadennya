@@ -19,13 +19,24 @@
       </ul>
     </section>
     <section class="top_description">
-      <p class="string-r color-white">
-        かでんやはデザインとバスクラリネットが好きな会社員です。コンサートのチラシを作るのが好きでたくさん作っていたら、
-        お願いされることが多くなりました。<br>
-        お子さまやお年寄りの方にコンサートを開催するのも好きです。<br>
+      <h3 class="string-l color-white">かでんやとは</h3>
+      <p class="mt-10 string-r color-white">
+        かでんやはデザインとバスクラリネットが好きな会社員です。コンサートのチラシを作るのと、
+        黙って聴いていなくていいコンサートを開催するのが趣味です。<br>
         仕事はデザイナー兼フロントエンドエンジニアです。バックエンドもたまにやります。
         好きな言語はJavaScriptです。
       </p>
+    </section>
+    <section class="top_topic l_inner-full">
+      <div class="topic_wrapper">
+        <div class="topic_item item-1">1</div>
+        <div class="topic_item item-2">2</div>
+        <div class="topic_item item-3">3</div>
+        <div class="topic_item item-4">4</div>
+        <div class="topic_item item-5">5</div>
+        <div class="topic_item item-6">6</div>
+
+      </div>
     </section>
   </div>
 </template>
@@ -37,6 +48,61 @@ export default {
 </script>
 
 <style lang="scss">
+.topic {
+   @at-root {
+    &_item {
+      padding: 10px;
+      background-color: white;
+      border-radius: 10px;
+      @media screen and (max-width: 480px){
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 481px){
+  .topic {
+   @at-root {
+    &_wrapper {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 30vh 30vh 30vh 30vh;
+
+    }
+    &_item {
+      background-color: white;
+      border-radius: 10px;
+      &.item-1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+      }
+      &.item-2 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+      &.item-3 {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+      }
+      &.item-4 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      }
+       &.item-5 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+      }
+      &.item-6 {
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+      }
+    }
+   }
+}
+
+}
+
 
 .top {
   width: 75%;
@@ -60,7 +126,6 @@ export default {
     height: 250px;
   }
   @at-root {
-
     &_title {
       width: 60%;
       @media screen and (max-width: 480px){
@@ -74,6 +139,9 @@ export default {
       }
     }
     &_description {
+      * {
+        font-family: 'komorebi';
+      }
       width: 80%;
       margin: 0 7% 0 13%;
       transform: translate(0,-70px);
@@ -83,7 +151,6 @@ export default {
       background-size:  500px 500px;
       padding: 110px 30px 30px;
       box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
-      font-family: 'komorebi';
       @media screen and (max-width: 480px){
         width: 90%;
         margin: 0;
@@ -176,9 +243,6 @@ export default {
       }
     }
   }
-  
-
-
 }
 
 </style>

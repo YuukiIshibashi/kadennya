@@ -3,7 +3,7 @@
     <navi />
     <ul class="blog">
       <li v-for="blog in blogs" :key="blog.id" class="blog_item">
-        <nuxt-link :to="`/blogs/${blog.id}`">
+        <nuxt-link :to="`/blogs/${blog.number}`">
           <h1 class="string-m">{{blog.title}}</h1>
           <p>{{blog.created_at}}</p>
         </nuxt-link>
