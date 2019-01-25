@@ -30,15 +30,15 @@
           仕事はデザイナー兼フロントエンドエンジニアです。バックエンドもたまにやります。
           好きな言語はJavaScriptです。
         </p>
-        <p class="mt-10 mb-20 string-r color-white">以下、好きなもの</p>
+        <p class="mt-10 mb-20 string-l color-white">以下、好きなものです</p>
         <div class="topic_wrapper">
           <div class="topic_item item-1">
             <div class="topic_item_img">
-              <img src="~/assets/images/contra.jpg">
+              <img src="~/assets/images/oyako-img.jpg">
             </div>
             <div class="p-10">
-              <h3 class="string-r string-bold">バスクラが好き（上手くはない）</h3>
-              <p class="string-ss">これはコントラバスクラでした。</p>
+              <h3 class="string-r string-bold">黙って聴いてなくて良いコンサートをやるのが好き</h3>
+              <p class="string-ss">何してたって良いと思うんです。</p>
             </div>
           </div>
           <div class="topic_item item-2">
@@ -49,14 +49,18 @@
               <h3 class="string-r string-bold">サーフィン好き（下手）</h3>
             </div>
           </div>
+          
           <div class="topic_item item-3">
             <div class="topic_item_img">
-              <img src="~/assets/images/archive/famiry01.jpg">
+                <nuxt-link to="/gallery">
+                <img src="~/assets/images/archive/famiry01.jpg">
+                </nuxt-link>
             </div>
             <div class="p-10">
               <h3 class="string-r string-bold">紙のデザイン</h3>
             </div>
           </div>
+         
           <div class="topic_item item-4">
             <div class="topic_item_img">
               <img src="~/assets/images/kabushima.jpg">
@@ -75,12 +79,12 @@
             </div>
           </div>
           <div class="topic_item item-6">
-            <div class="topic_item_img">
-              <img src="~/assets/images/oyako-img.jpg">
+             <div class="topic_item_img">
+              <img src="~/assets/images/contra.jpg">
             </div>
             <div class="p-10">
-              <h3 class="string-r string-bold">黙って聴いてなくて良いコンサートをやるのが好き</h3>
-              <p class="string-ss">何してたって良いと思うんです。</p>
+              <h3 class="string-r string-bold">バスクラが好き（上手くはない）</h3>
+              <p class="string-ss">これはコントラバスクラでした。</p>
             </div>
           </div>
 
@@ -185,9 +189,9 @@ export default {
     &_topic {
        background: url('../assets/images/bg/bg-deep.jpg') repeat;
        background-size:  500px 500px;
+       padding: 30px 0;
        * {
         font-family: 'komorebi';
-        line-height: 1.4;
       }
     }
     &_title {

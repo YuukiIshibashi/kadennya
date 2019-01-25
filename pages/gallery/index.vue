@@ -44,6 +44,17 @@
               <p class="gallery_item_caption string-ss">{{image.title}}</p>
           </li>
         </ul>
+        <h3 class="gallery_tags gallery_tags-1"><span>三つ折りチラシ</span></h3>
+        <ul class="gallery">
+          <li v-for="image in teanaImages" 
+              :key="image.title"
+              class="gallery_item"
+              :class="imageSize(image.size)"
+              @click="open(image)">
+              <img :src="image.src">
+              <p class="gallery_item_caption string-ss">{{image.title}}</p>
+          </li>
+        </ul>
       </div>
     </div>
     <gallery-item v-if="isOpen" :content="openImage" @close="close"></gallery-item>

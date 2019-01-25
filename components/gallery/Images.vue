@@ -45,6 +45,30 @@ export default {
           title: "川崎さくら吹奏楽団第２回定期演奏会チラシ",
           description: "川崎さくら吹奏楽団第２回定期演奏会チラシです。バスクラ吹きました。"
         },
+        {
+          src: require("~/assets/images/archive/famicon.png"),
+          size: "half",
+          title: "Marble Wind Brass TIKYOファミリーコンサート2016チラシ",
+          description: "Marble Wind Brass TIKYOファミリーコンサート2016チラシです。バスクラ吹きました。"
+        },
+        {
+          src: require("~/assets/images/archive/famiconIn.png"),
+          size: "normal",
+          title: "Marble Wind Brass TIKYOファミリーコンサート2016パンフレット中身",
+          description: "Marble Wind Brass TIKYOファミリーコンサート2016パンフレット中身です。バスクラ吹きました。"
+        },
+        {
+          src: require("~/assets/images/archive/famiconOut.png"),
+          size: "normal",
+          title: "Marble Wind Brass TIKYOファミリーコンサート2016パンフレット外見",
+          description: "Marble Wind Brass TIKYOファミリーコンサート2016パンフレット外身です。バスクラ吹きました。"
+        },
+        {
+          src: require("~/assets/images/archive/famicon2017.png"),
+          size: "half",
+          title: "Marble Wind Brass TIKYOファミリーコンサート2017チラシ",
+          description: "Marble Wind Brass TIKYOファミリーコンサート2017チラシです。バスクラ吹きました。司会もした気がする"
+        },
       ],
       shinrinyokuImages: [
          {
@@ -90,6 +114,20 @@ export default {
           size: "half",
           title: "クリアファイル作った時のアザラシ",
           description: "クリアファイル作った時のアザラシ"
+        },
+      ],
+      teanaImages: [
+         {
+          src: require("~/assets/images/archive/teana-in.png"),
+          size: "normal",
+          title: "エステサロンの三つ折りチラシ",
+          description: "エステサロンの三つ折りチラシ中ですね"
+        },
+        {
+          src: require("~/assets/images/archive/teana-out.png"),
+          size: "normal",
+          title: "エステサロンの三つ折りチラシ",
+          description: "エステサロンの三つ折りチラシ外です"
         },
       ],
     }
