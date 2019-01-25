@@ -12,7 +12,9 @@
         <nuxt-link to="/gallery">
           <li class="tags tags-2"><span>ギャラリー</span></li>
         </nuxt-link>
-        <li class="tags tags-3"><span>バスクラのこと</span></li>
+        <nuxt-link to="/bassClarinet">
+          <li class="tags tags-3"><span>バスクラのこと</span></li>
+        </nuxt-link>
         <li class="tags tags-4"><span></span></li>
         <li class="tags tags-5"><span></span></li>
         

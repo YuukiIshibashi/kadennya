@@ -8,7 +8,7 @@
         <nuxt-link to="/gallery">
           <li class="sp_navi_list string-s"><span>ギャラリー</span></li>
         </nuxt-link>
-        <nuxt-link to="/gallery">
+        <nuxt-link to="/bassClarinet">
           <li class="sp_navi_list string-s"><span>バスクラ</span></li>
         </nuxt-link>
       </ul>
