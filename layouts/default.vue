@@ -58,7 +58,7 @@ export default {
    height: 45px;
    z-index: 20;
    color: white;
-   background: url('../assets/images/bg/bg-gray.jpg') repeat;
+   background: url('../assets/images/bg/bg-deep.jpg') repeat;
    background-size:  500px 500px;
    text-align: center;
    line-height: 45px;

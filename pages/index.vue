@@ -19,23 +19,72 @@
       </ul>
     </section>
     <section class="top_description">
-      <h3 class="string-l color-white">かでんやとは</h3>
-      <p class="mt-10 string-r color-white">
-        かでんやはデザインとバスクラリネットが好きな会社員です。コンサートのチラシを作るのと、
-        黙って聴いていなくていいコンサートを開催するのが趣味です。<br>
-        仕事はデザイナー兼フロントエンドエンジニアです。バックエンドもたまにやります。
-        好きな言語はJavaScriptです。
-      </p>
+     
     </section>
-    <section class="top_topic l_inner-full">
-      <div class="topic_wrapper">
-        <div class="topic_item item-1">1</div>
-        <div class="topic_item item-2">2</div>
-        <div class="topic_item item-3">3</div>
-        <div class="topic_item item-4">4</div>
-        <div class="topic_item item-5">5</div>
-        <div class="topic_item item-6">6</div>
+    <section class="top_topic">
+      <div class="l_inner-full">
+        <h3 class="string-l color-white">かでんやとは</h3>
+        <p class="mt-10 string-r color-white">
+          かでんやはデザインとバスクラリネットが好きな会社員です。コンサートのチラシを作るのと、
+          黙って聴いていなくていいコンサートを開催するのが趣味です。<br>
+          仕事はデザイナー兼フロントエンドエンジニアです。バックエンドもたまにやります。
+          好きな言語はJavaScriptです。
+        </p>
+        <p class="mt-10 mb-20 string-r color-white">以下、好きなもの</p>
+        <div class="topic_wrapper">
+          <div class="topic_item item-1">
+            <div class="topic_item_img">
+              <img src="~/assets/images/contra.jpg">
+            </div>
+            <div class="p-10">
+              <h3 class="string-r string-bold">バスクラが好き（上手くはない）</h3>
+              <p class="string-ss">これはコントラバスクラでした。</p>
+            </div>
+          </div>
+          <div class="topic_item item-2">
+            <div class="topic_item_img">
+              <img src="~/assets/images/surf.jpg">
+            </div>
+            <div class="p-10">
+              <h3 class="string-r string-bold">サーフィン好き（下手）</h3>
+            </div>
+          </div>
+          <div class="topic_item item-3">
+            <div class="topic_item_img">
+              <img src="~/assets/images/archive/famiry01.jpg">
+            </div>
+            <div class="p-10">
+              <h3 class="string-r string-bold">紙のデザイン</h3>
+            </div>
+          </div>
+          <div class="topic_item item-4">
+            <div class="topic_item_img">
+              <img src="~/assets/images/kabushima.jpg">
+            </div>
+            <div class="p-10">
+              <h3 class="string-r string-bold">青森県八戸市</h3>
+            </div>
+          </div>
+          <div class="topic_item item-5">
+            <div class="topic_item_img">
+              <img src="~/assets/images/yakei.jpg">
+            </div>
+            <div class="p-10">
+              <h3 class="string-r string-bold">工場夜景</h3>
+              <p class="string-ss"></p>
+            </div>
+          </div>
+          <div class="topic_item item-6">
+            <div class="topic_item_img">
+              <img src="~/assets/images/oyako-img.jpg">
+            </div>
+            <div class="p-10">
+              <h3 class="string-r string-bold">黙って聴いてなくて良いコンサートをやるのが好き</h3>
+              <p class="string-ss">何してたって良いと思うんです。</p>
+            </div>
+          </div>
 
+        </div>
       </div>
     </section>
   </div>
@@ -51,12 +100,19 @@ export default {
 .topic {
    @at-root {
     &_item {
-      padding: 10px;
+      // padding: 10px;
       background-color: white;
-      border-radius: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
       @media screen and (max-width: 480px){
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
+    }
+    &_item_img {
+      overflow: hidden;
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+      height: 80%
     }
   }
 }
@@ -65,14 +121,12 @@ export default {
    @at-root {
     &_wrapper {
       display: grid;
-      gap: 15px;
+      gap: 20px;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 30vh 30vh 30vh 30vh;
+      grid-template-rows: 35vh 35vh 35vh 35vh;
 
     }
     &_item {
-      background-color: white;
-      border-radius: 10px;
       &.item-1 {
         grid-column: 1 / 3;
         grid-row: 1 / 3;
@@ -99,11 +153,13 @@ export default {
       }
     }
    }
+  }
 }
-
+@media screen and (max-width: 700px){
+  .topic_wrapper {
+    grid-template-rows: 20vh 20vh 20vh 20vh;
+  }
 }
-
-
 .top {
   width: 75%;
   background-size: cover;
@@ -126,6 +182,14 @@ export default {
     height: 250px;
   }
   @at-root {
+    &_topic {
+       background: url('../assets/images/bg/bg-deep.jpg') repeat;
+       background-size:  500px 500px;
+       * {
+        font-family: 'komorebi';
+        line-height: 1.4;
+      }
+    }
     &_title {
       width: 60%;
       @media screen and (max-width: 480px){
@@ -139,22 +203,20 @@ export default {
       }
     }
     &_description {
-      * {
-        font-family: 'komorebi';
-      }
-      width: 80%;
-      margin: 0 7% 0 13%;
-      transform: translate(0,-70px);
+      width: 75%;
+      height: 250px;
+      transform: translate(20px,-220px);
+      margin-bottom: -100px;
       z-index: 1;
       position: relative;
       background: url('../assets/images/bg/bg-gray.jpg') repeat;
       background-size:  500px 500px;
-      padding: 110px 30px 30px;
       box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
       @media screen and (max-width: 480px){
-        width: 90%;
+        width: 100%;
         margin: 0;
-        padding: 90px 10px 10px;
+        transform: translate(0,-230px);
+        margin-bottom: -160px;
       }
     }
   }

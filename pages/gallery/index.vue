@@ -109,7 +109,7 @@ export default {
       height: 100vh;
       position: fixed;
       left: 0;
-      background: url('../../assets/images/bg/bg-gray.jpg') repeat;
+      background: url('../../assets/images/bg/bg-deep.jpg') repeat;
       box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
       background-size:  500px 500px;
       @media screen and (max-width: 480px){
