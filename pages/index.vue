@@ -37,7 +37,7 @@
               <img src="~/assets/images/oyako-img.jpg">
             </div>
             <div class="p-10">
-              <h3 class="string-r string-bold">黙って聴いてなくて良いコンサートをやるのが好き</h3>
+              <h3 class="topic_item_title string-bold">黙って聴いてなくて良いコンサートをやるのが好き</h3>
               <p class="string-ss">何してたって良いと思うんです。</p>
             </div>
           </div>
@@ -46,7 +46,7 @@
               <img src="~/assets/images/surf.jpg">
             </div>
             <div class="p-10">
-              <h3 class="string-r string-bold">サーフィン好き（下手）</h3>
+              <h3 class="topic_item_title string-bold">サーフィン好き（下手）</h3>
             </div>
           </div>
           
@@ -57,7 +57,7 @@
                 </nuxt-link>
             </div>
             <div class="p-10">
-              <h3 class="string-r string-bold">紙のデザイン</h3>
+              <h3 class="topic_item_title string-bold">紙のデザイン</h3>
             </div>
           </div>
          
@@ -66,7 +66,7 @@
               <img src="~/assets/images/kabushima.jpg">
             </div>
             <div class="p-10">
-              <h3 class="string-r string-bold">青森県八戸市</h3>
+              <h3 class="topic_item_title string-bold">青森県八戸市</h3>
             </div>
           </div>
           <div class="topic_item item-5">
@@ -74,7 +74,7 @@
               <img src="~/assets/images/yakei.jpg">
             </div>
             <div class="p-10">
-              <h3 class="string-r string-bold">工場夜景</h3>
+              <h3 class="topic_item_title string-bold">工場夜景</h3>
               <p class="string-ss"></p>
             </div>
           </div>
@@ -83,7 +83,7 @@
               <img src="~/assets/images/contra.jpg">
             </div>
             <div class="p-10">
-              <h3 class="string-r string-bold">バスクラが好き（上手くはない）</h3>
+              <h3 class="topic_item_title  string-bold">バスクラが好き（上手くはない）</h3>
               <p class="string-ss">これはコントラバスクラでした。</p>
             </div>
           </div>
@@ -117,6 +117,9 @@ export default {
       border-radius: 5px 5px 0 0;
       width: 100%;
       height: 80%
+    }
+    &_item_title {
+      font-size: 12px;
     }
   }
 }
@@ -160,8 +163,15 @@ export default {
   }
 }
 @media screen and (max-width: 700px){
-  .topic_wrapper {
-    grid-template-rows: 20vh 20vh 20vh 20vh;
+  .topic {
+    @at-root {
+      &_wrapper {
+      grid-template-rows: 20vh 20vh 20vh 20vh;
+      }
+      &_item_title {
+        font-size: 8px;
+      }
+    }
   }
 }
 .top {
