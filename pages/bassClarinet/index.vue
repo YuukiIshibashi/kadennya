@@ -1,8 +1,7 @@
 <template>
   <div class="basscla">
-  <section class="">
     <navi />
-    <ul> 
+    <ul class="basscla_list"> 
       <li class="basscla_item">
         <div class="string-r">
           <h3 class="string-bold mb-10">どこでも背負っていきますよ</h3>
@@ -22,7 +21,6 @@
         <img src="~/assets/images/basscl/basscl_1.jpg"> 
       </li>
     </ul>
-  </section>
   </div>
 </template>
 
@@ -44,8 +42,25 @@ export default {
   background-attachment: fixed;
   min-height: 100vh;
   padding: 100px 0 50px;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $overlay_black-40;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    }
 
   @at-root {
+    &_list {
+      position: relative;
+      z-index: 3;  
+    }
     &_item {
       width: 70%;
       margin: 10px 0 50px 30%;
