@@ -22,6 +22,18 @@ export default {
           description: "都内で活動する吹奏楽団体、Marble Wind Brass TIKYOの第10回定期演奏会のチラシです。演出もがんばりました。"
         },
         {
+          src: require("~/assets/images/archive/MWBT10in.png"),
+          size: "normal",
+          title: "Marble Wind Brass TIKYO 第10回定期演奏会パンフレット中身",
+          description: "都内で活動する吹奏楽団体、Marble Wind Brass TIKYOの第10回定期演奏会のパンフレット中身です。演出もがんばりました。"
+        },
+        {
+          src: require("~/assets/images/archive/MWBT10out.png"),
+          size: "normal",
+          title: "Marble Wind Brass TIKYO 第10回定期演奏会パンフレット外身",
+          description: "都内で活動する吹奏楽団体、Marble Wind Brass TIKYOの第10回定期演奏会のパンフレット外身です。演出もがんばりました。"
+        },
+        {
           src: require("~/assets/images/archive/MWBT8.png"),
           size: "half",
           title: "Marble Wind Brass TIKYO 第8回定期演奏会チラシ",
@@ -69,6 +81,12 @@ export default {
           title: "Marble Wind Brass TIKYOファミリーコンサート2017チラシ",
           description: "Marble Wind Brass TIKYOファミリーコンサート2017チラシです。バスクラ吹きました。司会もした気がする"
         },
+        {
+          src: require("~/assets/images/archive/asks.png"),
+          size: "half",
+          title: "大人の文化祭チラシ",
+          description: "M大人の文化祭チラシです。"
+        },
       ],
       shinrinyokuImages: [
          {
@@ -95,6 +113,18 @@ export default {
           title: "NPO法人森林浴音楽会ポスター",
           description: "お手伝いしているNPO法人森林浴音楽会ポスター4です"
         },
+        {
+          src: require("~/assets/images/archive/sinrinyokuOut.jpg"),
+          size: "normal",
+          title: "NPO法人森林浴音楽会折パンフレット",
+          description: "お手伝いしているNPO法人森林浴音楽会折パンフレットです。内容が薄くて困った"
+        },
+        {
+          src: require("~/assets/images/archive/sinrinyokuIn.jpg"),
+          size: "normal",
+          title: "NPO法人森林浴音楽会折パンフレット",
+          description: "お手伝いしているNPO法人森林浴音楽会折パンフレットです。内容が薄くて困った"
+        },
       ],
       illustImages: [
          {
@@ -114,6 +144,20 @@ export default {
           size: "half",
           title: "クリアファイル作った時のアザラシ",
           description: "クリアファイル作った時のアザラシ"
+        },
+      ],
+      mfcgImages: [
+        {
+          src: require("~/assets/images/archive/mfcgOut.jpg"),
+          size: "normal",
+          title: "ミャンマーファミリークリニックさんの会報のお手伝い",
+          description: "ミャンマーファミリークリニックさんの会報の外面。これ文字多くて大変だったなぁ・・"
+        },
+        {
+          src: require("~/assets/images/archive/mfcgIn.jpg"),
+          size: "normal",
+          title: "ミャンマーファミリークリニックさんの会報のお手伝い",
+          description: "ミャンマーファミリークリニックさんの会報の中面。これ文字多くて大変だったなぁ・・"
         },
       ],
       teanaImages: [
