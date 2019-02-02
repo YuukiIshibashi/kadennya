@@ -1,3 +1,6 @@
+require('dotenv').config();
+const { API_KEY } = process.env;
+
 module.exports = {
   /*
   ** Headers of the page
@@ -58,6 +61,9 @@ module.exports = {
     use: [
       'markdown-it-toc' // 目次を作るためのライブラリ。別途インストールが必要
     ]
+  },
+  env: {
+    API_KEY
   }
 }
 

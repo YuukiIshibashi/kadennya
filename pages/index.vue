@@ -36,7 +36,9 @@
         <div class="topic_wrapper">
           <div class="topic_item item-1">
             <div class="topic_item_img">
-              <img src="~/assets/images/oyako-img.jpg">
+              <nuxt-link to="/blogs/label/concert">
+                <img src="~/assets/images/oyako-img.jpg">
+              </nuxt-link>
             </div>
             <div class="p-10">
               <h3 class="topic_item_title string-bold">黙って聴いてなくて良いコンサートをやるのが好き</h3>
@@ -54,9 +56,9 @@
           
           <div class="topic_item item-3">
             <div class="topic_item_img">
-                <nuxt-link to="/gallery">
+              <nuxt-link to="/gallery">
                 <img src="~/assets/images/archive/famiry01.jpg">
-                </nuxt-link>
+              </nuxt-link>
             </div>
             <div class="p-10">
               <h3 class="topic_item_title string-bold">紙のデザイン</h3>
