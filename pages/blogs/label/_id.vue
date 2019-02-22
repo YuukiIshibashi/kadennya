@@ -23,17 +23,13 @@ import LabelNav from '../../../components/blogs/LabelNav';
  
 export default {
   async asyncData ({ params }) {
-      const { data: blogs } = await axios.get('https://api.github.com/repos/YuukiIshibashi/blog/issues',
-      {
-        params: {
-          status: 'open',
-          access_token: process.env.API_KEY,
-          labels: `${params.id}`
-        }
-      })
-    return {
+    const { blogs } = await getPostData(params.id); 
+     return {
       blogs
     }
+  },
+  async created({ params }) {
+    this.blogs = await getPostData(params.id); 
   },
   components: {
     Navi,
@@ -54,6 +50,19 @@ export default {
       else if(name == "BassClarinet") { return "バスクラ" }
     },
   }
+}
+async function getPostData(id) {
+  const { data: blogs } = await axios.get('https://api.github.com/repos/YuukiIshibashi/blog/issues',
+      {
+        params: {
+          status: 'open',
+          access_token: process.env.API_KEY,
+          labels: `${id}`
+        }
+      })
+    return {
+      blogs
+    }
 }
 </script>
  

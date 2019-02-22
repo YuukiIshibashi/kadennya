@@ -14,15 +14,21 @@ import Navi from '../../components/Header';
  
 export default {
   async asyncData ({ params }) {
-       console.log(params)
-    const { data: blog } = await axios.get(`https://api.github.com/repos/YuukiIshibashi/blog/issues/${params.id}`)
-    return {
+    const blog = await getPostData(params.id); 
+     return {
       blog
     }
   },
   components: {
     Navi,
   },
+  async created({ params }) {
+    this.blog = await getPostData(params.id); 
+  }
+}
+async function getPostData(id) {
+  const { data: blog } = await axios.get(`https://api.github.com/repos/YuukiIshibashi/blog/issues/${id}`)
+  return blog
 }
 
 </script>
