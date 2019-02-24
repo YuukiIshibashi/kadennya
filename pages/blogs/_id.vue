@@ -3,6 +3,7 @@
     <navi />
     <div class="blog_content">
       <h1 class="string-l mb-50">{{blog.title}}</h1>
+       <!-- <div class="string-l mb-50">{{blog.body}}</div> -->
       <div v-html="$md.render(blog.body)" class="markdown-body"></div>
     </div>
   </section>
@@ -13,18 +14,19 @@ import axios from 'axios'
 import Navi from '../../components/Header';
  
 export default {
-  async asyncData ({ params }) {
-    const blog = await getPostData(params.id); 
-     return {
-      blog
+  data() {
+    return {
+      blog: {
+        body: "",
+      },
     }
   },
   components: {
     Navi,
   },
-  async created({ params }) {
-    this.blog = await getPostData(params.id); 
-  }
+  async created() {
+    this.blog = await getPostData(this.$route.params.id); 
+  },
 }
 async function getPostData(id) {
   const { data: blog } = await axios.get(`https://api.github.com/repos/YuukiIshibashi/blog/issues/${id}`)
