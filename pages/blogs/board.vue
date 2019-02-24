@@ -25,7 +25,6 @@ export default {
     Navi,
   },
   async created() {
-       console.log(this.$route)
     this.blog = await getPostData(this.$route.query.id); 
   },
 }

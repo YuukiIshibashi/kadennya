@@ -1,7 +1,11 @@
 <template>
   <section class="l_inner-full">
     <navi />
-    <label-nav />
+    <ul class="label_navi">
+      <li class="label concert string-s" @click="navLink('concert')">コンサート</li>
+      <li class="label usual string-s" @click="navLink('usual')">日常</li>
+      <li class="label bcl string-s" @click="navLink('BassClarinet')">バスクラ</li>
+    </ul>
     <ul class="blog">
       <li v-for="blog in blogs" :key="blog.id" class="blog_item" @click="link(blog.number)">
         <!-- <nuxt-link :to="`/blogs/${blog.number}`"> -->
@@ -52,6 +56,9 @@ export default {
   methods: {
     link(blogId) {
       this.$router.push({path: "/blogs/board", query: {id: blogId } });
+    },
+    navLink(label) {
+      this.$router.push({path: "/blogs/label", query: {id: label } });
     },
     formatDate(date){
       return moment(date).format("YYYY-MM-DD")
