@@ -3,12 +3,12 @@
     <navi />
     <label-nav />
     <ul class="blog">
-      <li v-for="blog in blogs" :key="blog.id" class="blog_item">
-        <nuxt-link :to="`/blogs/${blog.number}`">
+      <li v-for="blog in blogs" :key="blog.id" class="blog_item" @click="link(blog.number)">
+        <!-- <nuxt-link :to="`/blogs/${blog.number}`"> -->
           <p class="string-xs label" :class="labelCategory(blog.labels[0].name)">{{japaneseLabel(blog.labels[0].name)}}</p>
           <h1 class="string-m">{{blog.title}}</h1>
           <p>{{formatDate(blog.created_at)}}</p>
-        </nuxt-link>
+        <!-- </nuxt-link> -->
       </li>
     </ul>
   </section>
@@ -50,6 +50,9 @@ export default {
     LabelNav,
   },
   methods: {
+    link(blogId) {
+      this.$router.push({path: "/blogs/board", query: {id: blogId } });
+    },
     formatDate(date){
       return moment(date).format("YYYY-MM-DD")
     },
@@ -77,6 +80,7 @@ export default {
     &_item {
       padding: 10px 0;
       border-bottom: dotted 1px $gray;
+      cursor: pointer;
     }
   }
 }
