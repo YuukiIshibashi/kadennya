@@ -26,6 +26,7 @@ export default {
       blogs
     }
   },
+  watchQuery: ['id'],
   components: {
     Navi,
     LabelNav,
@@ -58,7 +59,6 @@ async function getPostData(id) {
           labels: `${id}`
         }
       })
-      console.log(blogs)
     return {
       blogs
     }

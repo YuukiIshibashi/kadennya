@@ -11,7 +11,6 @@ export default {
   methods: {
     link(label) {
       this.$router.push({path: "/blogs/label", query: {id: label } });
-      window.location.reload()
     }
   }
 }
