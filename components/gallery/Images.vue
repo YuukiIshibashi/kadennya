@@ -3,17 +3,29 @@ export default {
   data: function () {
     return {
       concertImages: [
-         {
+        {
+          src: require("~/assets/images/archive/HachinoheClarinet.jpg"),
+          size: "half",
+          title: "八戸アンサンブルカンパニーさんコンサート",
+          description: "なんとコントラバスクラで！！"
+        },
+        {
           src: require("~/assets/images/archive/Oyako1st.jpg"),
           size: "half",
           title: "第１回親子コンサート",
-          description: "子供と家族のためのコンサートをやりたくて企画してみました。育自サークルjunonさんに主催してもらいました"
+          description: "泣いても走り回ってもいいコンサートをやりたくて企画してみました。育自サークルjunonさんに主催してもらいました"
         },
         {
           src: require("~/assets/images/archive/Oyako2nd.png"),
           size: "half",
           title: "第２回親子コンサート",
-          description: "子供と家族のためのコンサートその２です"
+          description: "泣いても走り回ってもいいコンサートその２です"
+        },
+        {
+          src: require("~/assets/images/archive/oyako3rd.jpg"),
+          size: "half",
+          title: "第3回親子コンサート",
+          description: "泣いても走り回ってもいいコンサートその3です"
         },
          {
           src: require("~/assets/images/archive/MWBT10th.jpg"),
@@ -58,6 +70,18 @@ export default {
           description: "川崎さくら吹奏楽団第２回定期演奏会チラシです。バスクラ吹きました。"
         },
         {
+          src: require("~/assets/images/archive/sakura4thout.png"),
+          size: "normal",
+          title: "川崎さくら吹奏楽団第4回定期演奏会パンフレット外側",
+          description: "川崎さくら吹奏楽団第4回定期演奏会パンフレットです〜オペラ座の怪人がメインということで"
+        },
+        {
+          src: require("~/assets/images/archive/sakura4th.png"),
+          size: "normal",
+          title: "川崎さくら吹奏楽団第4回定期演奏会パンフレット内側",
+          description: "川崎さくら吹奏楽団第4回定期演奏会パンフレットです〜オペラ座の怪人がメインということで"
+        },
+        {
           src: require("~/assets/images/archive/famicon.png"),
           size: "half",
           title: "Marble Wind Brass TIKYOファミリーコンサート2016チラシ",
@@ -80,6 +104,12 @@ export default {
           size: "half",
           title: "Marble Wind Brass TIKYOファミリーコンサート2017チラシ",
           description: "Marble Wind Brass TIKYOファミリーコンサート2017チラシです。バスクラ吹きました。司会もした気がする"
+        },
+        {
+          src: require("~/assets/images/archive/famicon2019.png"),
+          size: "half",
+          title: "Marble Wind Brass TIKYOファミリーコンサート2017チラシ",
+          description: "Marble Wind Brass TIKYOファミリーコンサート2019チラシです。当日朝にバスクラが壊れる悲劇"
         },
         {
           src: require("~/assets/images/archive/asks.png"),
@@ -158,6 +188,18 @@ export default {
           size: "normal",
           title: "ミャンマーファミリークリニックさんの会報のお手伝い",
           description: "ミャンマーファミリークリニックさんの会報の中面。これ文字多くて大変だったなぁ・・"
+        },
+        {
+          src: require("~/assets/images/archive/mfcg12out.jpg"),
+          size: "normal",
+          title: "ミャンマーファミリークリニックさんの会報12号のお手伝い",
+          description: "ミャンマーファミリークリニックさんの会報12号の外面。これまた文字多くて大変だったなぁ・・"
+        },
+        {
+          src: require("~/assets/images/archive/mfcg12.jpg"),
+          size: "normal",
+          title: "ミャンマーファミリークリニックさんの会報12号のお手伝い",
+          description: "ミャンマーファミリークリニックさんの会報12号の中面。これまた文字多くて大変だったなぁ・・"
         },
       ],
       teanaImages: [
