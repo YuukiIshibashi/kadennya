@@ -27,6 +27,12 @@ export default {
           title: "第3回親子コンサート",
           description: "泣いても走り回ってもいいコンサートその3です"
         },
+        {
+          src: require("~/assets/images/archive/Oyako4th.jpg"),
+          size: "half",
+          title: "第4回親子コンサート",
+          description: "泣いても走り回ってもいいコンサートその4です"
+        },
          {
           src: require("~/assets/images/archive/MWBT10th.jpg"),
           size: "half",
