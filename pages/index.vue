@@ -36,7 +36,7 @@
         <div class="topic_wrapper">
           <div class="topic_item item-1">
             <div class="topic_item_img">
-              <nuxt-link to="/blogs/label/concert">
+              <nuxt-link to="blogs/board?id=8">
                 <img src="~/assets/images/oyako-img.jpg">
               </nuxt-link>
             </div>
